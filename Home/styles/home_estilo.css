@@ -1,0 +1,264 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box
+}
+
+h1, h2{
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+.img_disco{
+    text-align: center;
+}
+header{
+    height: 640px;
+}
+#discografia{
+    background-color: #1A1A1D;
+}
+#discografia h2{
+    font-size: 70px;
+    letter-spacing: 10px;
+    font-family: coffesoda;
+    color: white;
+}
+article {
+    text-align: center;
+    padding: 70px;
+    margin-right: 100px;
+    color: rgb(117, 80, 80);
+
+}
+.bandacompleta{
+    display: flex;
+    justify-content: center;
+}
+#sobre{
+    height: auto;
+    align-items: center;
+    background-color: #1A1A1D;
+}
+/* Contêiner das imagens */
+.div_img {
+    box-shadow: 10px black solid;
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    color: white;
+    font-size: 30px;
+}
+.img_container img {
+    box-shadow: 10px 10px black;
+    border-radius: 20px;
+    padding: 10px;
+    width: 200px;
+    height: 250px;
+}
+.img_container img:hover{
+    width: 270px;
+    height: 350px;
+}
+
+#tour{ 
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    color: rgb(255, 242, 242);
+    background-color: #000000;
+}
+#tour h2{
+    font-family: coffesoda;
+    font-size: 70px;
+    letter-spacing: 10px;
+    color: white;  
+}
+.dias{
+    background-color: white;
+    color: rgb(114, 101, 101);
+    display: flex;
+    justify-content: center;
+    height: 30%;
+    width: 60%;
+    flex-direction: column;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    float: left;
+    position: relative; /*para modificar a posição do elemento pai */
+}
+
+nav ul li a {
+    display: block;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: white;
+}
+
+/* Cor ao passar o mouse sobre os links */
+nav ul li a:hover {
+    color: red;
+    font-size: 20px;
+}
+nav .lupa {
+    color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+/* Oculta o submenu por padrão */
+.submenu_dropdown {
+    display: none;
+    position: absolute; /* Para posicionar o submenu abaixo do item pai */
+    background-color: #1b171770;
+    border-radius: 2px;
+}
+
+/* Quando o mouse passa sobre o item principal, exibe o submenu */
+.dropdown:hover .submenu_dropdown {
+    display: block;
+}
+
+/* Estilos para os itens do submenu */
+.submenu_dropdown ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.submenu_dropdown ul li a {
+    padding: 12px 16px;
+    color: white;
+    text-decoration: none;
+}
+.agendamentos{
+    display: flex;
+    margin-top: 25px;
+    width: 60%;
+    margin-bottom: 50px;
+    justify-content: space-between;
+}
+.comprarbilhetes img {
+    width: 100%;
+    height: 60%;
+    border-radius: 2px 2px 0 0; /* Bordas arredondadas apenas na parte superior */
+}
+.comprarbilhetes {
+    display: flex;
+    width: 32%;
+    height: 420px;
+    background-color: white;
+    border-radius: 2px;
+    flex-direction: column; /* Alinha os itens verticalmente */
+    justify-content: space-between; /* Distribui o espaço entre os itens */ /* Garante que cada div ocupe a altura total do contêiner */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para destaque */
+}
+.comprarbilhetes p,h3{
+    margin: 8px;
+    color: black;
+} 
+.comprarbilhetes button{
+    margin: 8px;
+    background-color: black;
+    border-radius: 4px;
+    color: white;
+    padding: 10px;
+} 
+.dias_reserva {
+    padding: 6px;
+    margin: 6px;
+}
+footer, h2{
+    color: #000000;
+}
+footer{
+    background-color: rgb(61, 56, 56); padding: 20px;
+}
+.contato-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px; /* Espaçamento entre os contatos e o formulário */
+    flex-wrap: wrap; /* Responsivo: ajusta em telas menores */
+}
+
+.info-contato p {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaço entre os campos do formulário */
+}
+
+form input,form textarea {
+    width: 250px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #333;
+}
+.social-media {
+    display: flex; /* Usa flexbox para organizar os elementos */
+    flex-direction: row; /* Organiza os itens em uma coluna */
+    justify-content: center; /* Centraliza verticalmente os itens, se a altura da div permitir */
+    text-align: center; /* Alinha o texto ao centro */
+    padding: 10px; /* Adiciona algum espaço ao redor */
+}
+@media (max-width: 768px) {
+    #discografia h2, #tour h2 {
+        font-size: 50px;
+    }
+    .div_img {
+        flex-direction: column;
+        padding: 50px;
+    }
+    .agendamentos {
+        width: 80%;
+    }
+}
+@media (min-width: 992px) {
+    .nav-item a {
+        padding: 16px 20px;
+    }
+    .comprarbilhetes {
+        width: 30%;
+    }
+}
+@media (min-width: 1200px) {
+    header {
+        height: 700px;
+    }
+    .container-fluid {
+        max-width: 1200px;
+    }
+}
+
+
+
+

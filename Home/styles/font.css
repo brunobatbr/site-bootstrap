@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'coffesoda'; /* Nome que você quer dar à fonte */
+    src: url('font/Coffee_Soda.ttf')/* Caminho do arquivo da fonte */
+}
+@font-face {
+    font-family: 'vintagebrush'; /* Nome que você quer dar à fonte */
+    src: url('font/VintageBrush.ttf')/* Caminho do arquivo da fonte */
+}
+@font-face {
+    font-family: 'tcheadlinerrough'; /* Nome que você quer dar à fonte */
+    src: url('font/TCHeadlinerRough-CondRegular.otf')/* Caminho do arquivo da fonte */
+}
